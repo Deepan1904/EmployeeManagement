@@ -12,7 +12,7 @@ public class Employee {
 	
 	private long empId;
 	private String fname;
-	private String lname
+	private String lname;
 	@Id
 	private String email;
 	
