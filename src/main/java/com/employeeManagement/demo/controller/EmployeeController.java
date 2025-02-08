@@ -26,6 +26,11 @@ public class EmployeeController {
 	
 	@Autowired
 	EmployeeServiceImpl employeeServiceImpl;
+
+	@GetMapping("/showMyname")
+	public static ResponseEntity<String> test() {
+		return new ResponseEntity<>("Hi I am Deepan !! :)",HttpStatus.OK);
+	}
 	
 	@GetMapping("/get")
 	public String HelloWorld()
